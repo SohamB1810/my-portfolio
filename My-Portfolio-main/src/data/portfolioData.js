@@ -1,35 +1,32 @@
-import ratinamazeImg from '../assets/projects/ratinamaze.webp';
 import aidjImg from '../assets/projects/aidj.webp';
 import cicdImg from '../assets/projects/cicd.webp';
-import bethanyLogo from '../assets/schools/bethany.webp';
-import dpsLogo from '../assets/schools/dps.webp';
 import lpuLogo from '../assets/schools/lpu.webp';
 
 export const heroData = {
   firstName: 'Soham',
   lastName: 'Biswas',
-  role: 'Full-Stack & Cloud Developer',
+  role: 'Full-Stack Developer',
   tagline:
-    'Building enterprise-grade web platforms, microservices, and research-led software with a strong foundation in Java, Spring Boot, Next.js, and modern cloud tooling.',
+    'Building secure full-stack products, enterprise microservices, and research-backed software with Java, Spring Boot, Next.js, and modern cloud tooling.',
   resumeUrl: '/SohamBiswasCV.docx',
   stats: [
-    { value: '3', label: 'Featured Projects' },
+    { value: '2', label: 'Featured Projects' },
+    { value: '3', label: 'Oracle Certifications' },
     { value: '1', label: 'Journal Publication' },
-    { value: '2026', label: 'Research & Builds' },
   ],
 };
 
 export const aboutText =
-  'I am a Computer Science and Engineering student at Lovely Professional University with hands-on experience across full-stack development, microservices, cloud systems, and technical research. My work spans Spring Boot backends, Next.js frontends, Kafka-driven event flows, containerized deployments, and scalable REST APIs. I enjoy turning complex system ideas into practical products, whether that means architecting enterprise-style banking services, building polished user-facing applications, or exploring research topics at the intersection of technology and science.';
+  'I am a Computer Science and Engineering student at Lovely Professional University with hands-on experience in full-stack development, microservices, cloud systems, and technical research. My work spans Spring Boot backends, Next.js frontends, Kafka-driven event flows, containerized deployments, and scalable REST APIs. I enjoy building practical software that is secure, performant, and production-minded, whether that means architecting banking platforms, shipping polished commerce experiences, or exploring AI applications in scientific research.';
 
 export const projects = [
   {
     id: 1,
     year: 'Mar 2026',
-    category: 'Enterprise Microservices',
-    title: 'NexaBank Enterprise Banking Platform',
+    category: 'Enterprise Banking Microservices',
+    title: 'NexaBank Enterprise Banking Microservices Platform',
     description:
-      'Architected 23 Spring Boot microservices for accounts, transactions, loans, and payments with Kafka-based event streaming for real-time processing. Added JWT, OAuth2, API gateway protections, Docker, Kubernetes, and CI/CD optimizations to improve resilience and reduce inter-service latency.',
+      'Architected 23 Spring Boot microservices for accounts, transactions, loans, and payments, with Apache Kafka event streaming so each service can run independently without taking the rest of the system down. Secured APIs with JWT and OAuth2, added an API Gateway with rate limiting and circuit breakers, and used Docker, Kubernetes, and CI/CD automation to improve resilience and reduce response time.',
     liveUrl: null,
     githubUrl: 'https://github.com/SohamB1810/NexaBank',
     image: cicdImg,
@@ -42,25 +39,12 @@ export const projects = [
     category: 'Full Stack Commerce',
     title: 'Voltex E-Commerce Platform',
     description:
-      'Built a responsive e-commerce experience with Next.js 14 App Router and Spring Boot REST APIs, including Stripe integration, admin workflows for products and orders, and JWT-based role access. Focused on fast SSR performance and a mobile-first user experience.',
+      'Designed and built a responsive e-commerce platform using Next.js 14 App Router and Spring Boot REST APIs, with Stripe integration for checkout and order tracking. Added a modular admin dashboard for products, orders, inventory, and users, backed by JWT-based role access and optimized with SSR and a mobile-first Tailwind CSS interface.',
     liveUrl: null,
     githubUrl: 'https://github.com/SohamB1810/voltex',
     image: aidjImg,
     imageColor: 'bg-emerald-900',
     techStack: ['Next.js', 'React', 'Spring Boot', 'MySQL', 'Stripe API', 'Tailwind CSS', 'REST API'],
-  },
-  {
-    id: 3,
-    year: '2026',
-    category: 'HRMS Platform',
-    title: 'NexusHR',
-    description:
-      'A full-stack Human Resource Management System that streamlines employee records, payroll tracking, and HR operations through a modern dashboard. The project combines a Next.js frontend with a Spring Boot backend and MySQL to demonstrate enterprise-style full-stack architecture.',
-    liveUrl: 'https://nexushr-git-main-sohamb1810s-projects.vercel.app',
-    githubUrl: 'https://github.com/SohamB1810/nexushr',
-    image: ratinamazeImg,
-    imageColor: 'bg-orange-900',
-    techStack: ['Next.js', 'React', 'Spring Boot', 'MySQL', 'Tailwind CSS', 'Axios', 'REST API'],
   },
 ];
 
@@ -68,9 +52,9 @@ export const recognitions = [
   {
     id: 1,
     title: 'Peer-Reviewed Publication',
-    event: 'IJSRST 2026',
+    event: 'IJSRSET, Jan 2026',
     description:
-      'Co-authored a journal paper in the International Journal of Scientific Research in Science and Technology, published in Volume 13 Issue 2 on March 5, 2026.',
+      'Published research on the role of AI in galaxy analysis, with a reported scientific impact score of 9.5 in an international peer-reviewed journal.',
     icon: 'Research',
     gradient: 'from-fuchsia-600/30 to-purple-600/10',
     border: 'border-fuchsia-500/20',
@@ -89,10 +73,10 @@ export const recognitions = [
   },
   {
     id: 3,
-    title: 'Enterprise Project Focus',
-    event: 'Java + Cloud Stack',
+    title: 'Oracle-Certified Cloud Track',
+    event: 'Database, DevOps, GenAI',
     description:
-      'Built projects centered on microservices, secure REST APIs, cloud tooling, and production-minded system design with Spring Boot, Kafka, Docker, Kubernetes, and Next.js.',
+      'Earned Oracle certifications spanning Database@AWS architecture, OCI DevOps, and OCI Generative AI, reinforcing a strong cloud and platform engineering foundation.',
     icon: 'Scale',
     gradient: 'from-blue-600/30 to-indigo-600/10',
     border: 'border-blue-500/20',
@@ -103,51 +87,9 @@ export const recognitions = [
 export const certifications = [
   {
     id: 1,
-    title: 'AWS Educate Getting Started with Databases',
-    issuer: 'Amazon Web Services Training and Certification',
-    date: '2025',
-    description:
-      'Completed AWS Educate training covering relational database setup and SQL-based read/write operations.',
-    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
-    certImage: 'https://images.credly.com/images/a08cf90b-9838-4f6c-82bd-8db85fb89dd5/linkedin_thumb_blob',
-    color: 'from-blue-600/20 to-blue-400/10',
-    border: 'border-blue-500/20',
-    glow: 'rgba(59, 130, 246, 0.3)',
-    viewUrl: 'https://www.credly.com/badges/34149d49-bc94-4a80-9513-c307c51f26d1/linked_in_profile',
-  },
-  {
-    id: 2,
-    title: 'AWS Educate Introduction to Generative AI',
-    issuer: 'Amazon Web Services Training and Certification',
-    date: '2025',
-    description:
-      'Earned AWS Educate training in foundational generative AI concepts, use cases, and core model understanding.',
-    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
-    certImage: 'https://images.credly.com/images/e50c657a-edd9-4c93-b1cf-2b6634b54abf/linkedin_thumb_blob',
-    color: 'from-purple-600/20 to-pink-400/10',
-    border: 'border-purple-500/20',
-    glow: 'rgba(168, 85, 247, 0.3)',
-    viewUrl: 'https://www.credly.com/badges/f9af509f-e68e-46ee-b238-784e5d339edb/linked_in_profile',
-  },
-  {
-    id: 3,
-    title: 'AWS Academy Graduate - Cloud Architecting',
-    issuer: 'Amazon Web Services Training and Certification',
-    date: '2025',
-    description:
-      'Completed AWS Academy Cloud Architecting coursework focused on core cloud architecture concepts and deployment thinking.',
-    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
-    certImage: 'https://images.credly.com/images/fcafd0c9-42da-4703-a191-0c397203dc1b/linkedin_thumb_blob',
-    color: 'from-amber-600/20 to-yellow-400/10',
-    border: 'border-amber-500/20',
-    glow: 'rgba(245, 158, 11, 0.3)',
-    viewUrl: 'https://www.credly.com/badges/7ed7efe5-40b7-42a2-9e11-71decfbf9d5f/linked_in_profile',
-  },
-  {
-    id: 4,
     title: 'Oracle Database@AWS Certified Architect Professional',
     issuer: 'Oracle',
-    date: 'Oct 16, 2025',
+    date: 'Sep 2025',
     description:
       'Verifies advanced skills in designing, deploying, securing, migrating, and operating Oracle Database@AWS environments with high availability and disaster recovery planning.',
     logo: 'https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg',
@@ -158,10 +100,10 @@ export const certifications = [
     viewUrl: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=459144D0828F5390838C455F83667145D0740D74ABD0B44EE567712D9C65E063',
   },
   {
-    id: 5,
+    id: 2,
     title: 'Oracle Cloud Infrastructure 2025 Certified DevOps Professional',
     issuer: 'Oracle',
-    date: 'Sep 29, 2025',
+    date: 'Oct 2025',
     description:
       'Focused on OCI DevOps workflows including infrastructure as code, CI/CD configuration, container orchestration, DevSecOps, and monitoring and observability.',
     logo: 'https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg',
@@ -172,10 +114,10 @@ export const certifications = [
     viewUrl: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=3926A0D9764AC851F7C41A4863CB574B9F3C40133C9FD5C52A7C924BCB682345',
   },
   {
-    id: 6,
+    id: 3,
     title: 'Oracle Cloud Infrastructure 2025 Certified Generative AI Professional',
     issuer: 'Oracle',
-    date: 'Sep 15, 2025',
+    date: 'Oct 2025',
     description:
       'Validates applied knowledge of large language models and OCI Generative AI Service, including RAG workflows, semantic search, vector databases, and LangChain-based LLM applications.',
     logo: 'https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg',
@@ -190,40 +132,21 @@ export const certifications = [
 export const publications = [
   {
     id: 1,
-    title: 'The Role of Artificial Intelligence in Galaxy Research',
+    title: 'The Role of AI in Galaxy Research',
     journal: 'International Journal of Scientific Research in Science, Engineering and Technology',
-    citation: 'Vol. 13, No. 1, pp. 241-245',
-    publishedDate: 'January 25, 2026',
-    authors: ['Soham Biswas', 'Jatin Thakur'],
+    citation: 'Published in January 2026',
+    publishedDate: 'January 2026',
+    authors: ['Soham Biswas'],
     abstract:
-      'Explores how artificial intelligence is reshaping galaxy research through classification, anomaly detection, large-scale astronomical data analysis, and AI-driven astrophysics workflows.',
+      'Explores AI and deep learning applications in astrophysics and galaxy analysis, focusing on how computational methods can support large-scale astronomical research.',
     highlights: [
       'Published in a peer-reviewed international journal.',
-      'Focused on AI applications for galaxy categorization, anomaly detection, and cosmic structure mapping.',
-      'Reviewed machine learning and deep learning methods used in modern astrophysics.',
+      'Achieved a scientific impact score of 9.5.',
+      'Focused on AI and deep learning applications in astrophysics and galaxy analysis.',
     ],
-    articleId: 'IJSRSET261315',
-    articleUrl: 'https://ijsrset.com/index.php/home/article/view/IJSRSET261315',
-    pdfUrl: 'https://ijsrset.com/index.php/home/article/download/IJSRSET261315/IJSRSET261315',
-  },
-  {
-    id: 2,
-    title:
-      'Modern Age Dementia: As A Multidimensional Neurodegenerative Disorder Affecting Cognition, Identity, and the Ageing Population',
-    journal: 'International Journal of Scientific Research in Science and Technology',
-    citation: 'Vol. 13, No. 2, pp. 43-54',
-    publishedDate: 'March 5, 2026',
-    authors: ['Adika Srivastava', 'Soham Biswas'],
-    abstract:
-      'A peer-reviewed paper exploring dementia as a multidimensional biopsychosocial challenge shaped by neurodegeneration, genetics, lifestyle patterns, and social change, with an emphasis on early detection, awareness, and future care.',
-    highlights: [
-      'Published in a peer-reviewed international journal.',
-      'Positioned dementia beyond ageing alone by connecting biology, cognition, lifestyle, and social factors.',
-      'Examined neural communication, memory decline, neuroplasticity, amyloid and tau pathology, and modern behavioural indicators.',
-    ],
-    articleId: 'IJSRST2613177',
-    articleUrl: 'https://ijsrst.com/index.php/home/article/view/IJSRST2613177',
-    pdfUrl: 'https://ijsrst.com/index.php/home/article/download/IJSRST2613177/IJSRST2613177',
+    articleId: null,
+    articleUrl: null,
+    pdfUrl: null,
   },
 ];
 
@@ -240,14 +163,14 @@ export const education = [
     title: 'Swami Vivekanand Public School',
     subtitle: 'Intermediate (PCM)',
     grade: 'Percentage: 75%',
-    logo: dpsLogo,
+    logo: null,
   },
   {
     year: '2020 - 2021',
     title: 'Swami Vivekanand Public School',
     subtitle: 'Matriculation',
     grade: 'Percentage: 75%',
-    logo: bethanyLogo,
+    logo: null,
   },
 ];
 
