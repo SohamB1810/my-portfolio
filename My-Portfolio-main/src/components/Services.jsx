@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring, useMotionValue } from 'framer-motion';
-import { Cpu, Terminal, Layout, Server, Settings, Code, Layers, Database, Shield } from 'lucide-react';
+import { Cpu, Terminal, Layout, Settings, Database, Brain, Lightbulb, Users, Briefcase, RefreshCw } from 'lucide-react';
 
 const techCategories = [
   {
@@ -64,6 +64,20 @@ const techCategories = [
       { name: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg' },
       { name: 'Maven', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apache/apache-original.svg' },
       { name: 'IntelliJ', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg' },
+    ],
+  },
+  {
+    label: 'Soft Skills',
+    description: 'Collaboration and execution strengths highlighted in the CV and reflected across project work.',
+    icon: <Brain className="w-5 h-5 text-rose-400" />,
+    color: 'from-rose-600/15 to-red-600/5',
+    accent: 'text-rose-400',
+    glow: 'rgba(251, 113, 133, 0.15)',
+    techs: [
+      { name: 'Problem-Solving', icon: <Lightbulb className="w-full h-full text-rose-300" /> },
+      { name: 'Team Player', icon: <Users className="w-full h-full text-rose-300" /> },
+      { name: 'Project Management', icon: <Briefcase className="w-full h-full text-rose-300" /> },
+      { name: 'Adaptability', icon: <RefreshCw className="w-full h-full text-rose-300" /> },
     ],
   },
 ];
@@ -153,7 +167,17 @@ const SkillCard = ({ category, index }) => {
                 whileHover={{ y: -8, scale: 1.15, rotate: 0 }}
                 className="w-16 h-16 md:w-20 md:h-20 rounded-[24px] bg-white/[0.04] border border-white/5 p-4 flex items-center justify-center shadow-2xl group-hover/tech:border-white/30 group-hover/tech:bg-white/10 transition-all duration-300"
               >
-                <img src={tech.icon} alt={tech.name} loading="lazy" className="w-full h-full object-contain filter drop-shadow-2xl" />
+                {typeof tech.icon === 'string' ? (
+                  <img src={tech.icon} alt={tech.name} loading="lazy" className="w-full h-full object-contain filter drop-shadow-2xl" />
+                ) : tech.icon ? (
+                  <div className="w-full h-full flex items-center justify-center">
+                    {tech.icon}
+                  </div>
+                ) : (
+                  <span className="text-center text-[10px] md:text-[11px] font-black uppercase tracking-[0.18em] text-white/80 leading-tight">
+                    {tech.name}
+                  </span>
+                )}
               </motion.div>
               <span className="mt-5 text-[11px] font-extrabold tracking-[0.2em] uppercase text-white/20 group-hover/tech:text-cyan-400 group-hover/tech:scale-110 transition-all duration-300">
                 {tech.name}
