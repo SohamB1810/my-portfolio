@@ -12,7 +12,7 @@ export const heroData = {
   resumeUrl: '/SohamBiswasCV.docx',
   stats: [
     { value: '3', label: 'Featured Projects' },
-    { value: '3', label: 'Oracle Certifications' },
+    { value: '6', label: 'Certifications' },
     { value: '2', label: 'Journal Publications' },
   ],
 };
@@ -101,6 +101,48 @@ export const recognitions = [
 export const certifications = [
   {
     id: 1,
+    title: 'AWS Educate Getting Started with Databases',
+    issuer: 'Amazon Web Services Training and Certification',
+    date: '2025',
+    description:
+      'Completed AWS Educate training covering relational database setup and SQL-based read/write operations.',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
+    certImage: 'https://images.credly.com/images/a08cf90b-9838-4f6c-82bd-8db85fb89dd5/linkedin_thumb_blob',
+    color: 'from-blue-600/20 to-blue-400/10',
+    border: 'border-blue-500/20',
+    glow: 'rgba(59, 130, 246, 0.3)',
+    viewUrl: 'https://www.credly.com/badges/34149d49-bc94-4a80-9513-c307c51f26d1/linked_in_profile',
+  },
+  {
+    id: 2,
+    title: 'AWS Educate Introduction to Generative AI',
+    issuer: 'Amazon Web Services Training and Certification',
+    date: '2025',
+    description:
+      'Earned AWS Educate training in foundational generative AI concepts, use cases, and core model understanding.',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
+    certImage: 'https://images.credly.com/images/e50c657a-edd9-4c93-b1cf-2b6634b54abf/linkedin_thumb_blob',
+    color: 'from-purple-600/20 to-pink-400/10',
+    border: 'border-purple-500/20',
+    glow: 'rgba(168, 85, 247, 0.3)',
+    viewUrl: 'https://www.credly.com/badges/f9af509f-e68e-46ee-b238-784e5d339edb/linked_in_profile',
+  },
+  {
+    id: 3,
+    title: 'AWS Academy Graduate - Cloud Architecting',
+    issuer: 'Amazon Web Services Training and Certification',
+    date: '2025',
+    description:
+      'Completed AWS Academy Cloud Architecting coursework focused on core cloud architecture concepts and deployment thinking.',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
+    certImage: 'https://images.credly.com/images/fcafd0c9-42da-4703-a191-0c397203dc1b/linkedin_thumb_blob',
+    color: 'from-amber-600/20 to-yellow-400/10',
+    border: 'border-amber-500/20',
+    glow: 'rgba(245, 158, 11, 0.3)',
+    viewUrl: 'https://www.credly.com/badges/7ed7efe5-40b7-42a2-9e11-71decfbf9d5f/linked_in_profile',
+  },
+  {
+    id: 4,
     title: 'Oracle Database@AWS Certified Architect Professional',
     issuer: 'Oracle',
     date: 'Sep 2025',
@@ -114,7 +156,7 @@ export const certifications = [
     viewUrl: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=459144D0828F5390838C455F83667145D0740D74ABD0B44EE567712D9C65E063',
   },
   {
-    id: 2,
+    id: 5,
     title: 'Oracle Cloud Infrastructure 2025 Certified DevOps Professional',
     issuer: 'Oracle',
     date: 'Oct 2025',
@@ -128,7 +170,7 @@ export const certifications = [
     viewUrl: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=3926A0D9764AC851F7C41A4863CB574B9F3C40133C9FD5C52A7C924BCB682345',
   },
   {
-    id: 3,
+    id: 6,
     title: 'Oracle Cloud Infrastructure 2025 Certified Generative AI Professional',
     issuer: 'Oracle',
     date: 'Oct 2025',
