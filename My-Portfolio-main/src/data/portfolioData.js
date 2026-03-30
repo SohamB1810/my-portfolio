@@ -1,3 +1,4 @@
+import ratinamazeImg from '../assets/projects/ratinamaze.webp';
 import aidjImg from '../assets/projects/aidj.webp';
 import cicdImg from '../assets/projects/cicd.webp';
 import lpuLogo from '../assets/schools/lpu.webp';
@@ -10,9 +11,9 @@ export const heroData = {
     'Building secure full-stack products, enterprise microservices, and research-backed software with Java, Spring Boot, Next.js, and modern cloud tooling.',
   resumeUrl: '/SohamBiswasCV.docx',
   stats: [
-    { value: '2', label: 'Featured Projects' },
+    { value: '3', label: 'Featured Projects' },
     { value: '3', label: 'Oracle Certifications' },
-    { value: '1', label: 'Journal Publication' },
+    { value: '2', label: 'Journal Publications' },
   ],
 };
 
@@ -45,6 +46,19 @@ export const projects = [
     image: aidjImg,
     imageColor: 'bg-emerald-900',
     techStack: ['Next.js', 'React', 'Spring Boot', 'MySQL', 'Stripe API', 'Tailwind CSS', 'REST API'],
+  },
+  {
+    id: 3,
+    year: '2026',
+    category: 'HRMS Platform',
+    title: 'NexusHR',
+    description:
+      'A full-stack Human Resource Management System that streamlines employee records, payroll tracking, and HR operations through a modern dashboard. The project combines a Next.js frontend with a Spring Boot backend and MySQL to demonstrate enterprise-style full-stack architecture.',
+    liveUrl: 'https://nexushr-git-main-sohamb1810s-projects.vercel.app',
+    githubUrl: 'https://github.com/SohamB1810/nexushr',
+    image: ratinamazeImg,
+    imageColor: 'bg-orange-900',
+    techStack: ['Next.js', 'React', 'Spring Boot', 'MySQL', 'Tailwind CSS', 'Axios', 'REST API'],
   },
 ];
 
@@ -147,6 +161,25 @@ export const publications = [
     articleId: null,
     articleUrl: null,
     pdfUrl: null,
+  },
+  {
+    id: 2,
+    title:
+      'Modern Age Dementia: As A Multidimensional Neurodegenerative Disorder Affecting Cognition, Identity, and the Ageing Population',
+    journal: 'International Journal of Scientific Research in Science and Technology',
+    citation: 'Vol. 13, No. 2, pp. 43-54',
+    publishedDate: 'March 5, 2026',
+    authors: ['Adika Srivastava', 'Soham Biswas'],
+    abstract:
+      'A peer-reviewed paper exploring dementia as a multidimensional biopsychosocial challenge shaped by neurodegeneration, genetics, lifestyle patterns, and social change, with an emphasis on early detection, awareness, and future care.',
+    highlights: [
+      'Published in a peer-reviewed international journal.',
+      'Positioned dementia beyond ageing alone by connecting biology, cognition, lifestyle, and social factors.',
+      'Examined neural communication, memory decline, neuroplasticity, amyloid and tau pathology, and modern behavioural indicators.',
+    ],
+    articleId: 'IJSRST2613177',
+    articleUrl: 'https://ijsrst.com/index.php/home/article/view/IJSRST2613177',
+    pdfUrl: 'https://ijsrst.com/index.php/home/article/download/IJSRST2613177/IJSRST2613177',
   },
 ];
 
